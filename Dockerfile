@@ -5,5 +5,7 @@ COPY . .
 
 RUN npm install
 
+RUN chmod -R 777 /app
+
 ENTRYPOINT ["npm", "start"]
 
